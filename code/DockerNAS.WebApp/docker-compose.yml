@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  webapp: 
+    image: 192.168.0.250:49155/dockernaswebapp:arm64
+    restart: always
+    expose: 
+     - "80"
+    ports: 
+     - "49900:80"
